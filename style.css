@@ -2,3 +2,53 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+.titolo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 4rem;
+    /* background-color: rgba(203, 238, 76, 0.33); */
+    background-color: white;
+}
+#logo {
+    font-family: "Josefin Sans", sans-serif;
+    color: #2BAE66;
+}
+
+li {
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    color: #2BAE66;
+    font-weight: 600;
+}
+ul {
+    display: flex;
+    gap: 3rem;
+}
+body {
+    background-color: #2BAE66;
+    ;
+}
+
+#nome {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.detail {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.principale {
+    display: flex;
+   flex-direction: column;
+   margin-top: 250px;
+   margin-left: 100px;
+}
