@@ -39,12 +39,14 @@ li {
     /*color: #2BAE66; */
     color: #A4193D;
     font-weight: 600;
+    
 }
 ul {
     display: flex;
     gap: 3rem;
+
 }
-a {
+li a {
     text-decoration: none;
     cursor: pointer;
     color: #A4193D;
@@ -52,7 +54,7 @@ a {
 li a:hover {
     cursor: pointer;
     transform: scale(1.2);
-    color: black;
+    color: #72112a;
 }
 body {
     /* background-color: #2BAE66; 
@@ -111,5 +113,74 @@ body {
     color: #A4193D;
     transform: scale(1.3) rotate(13deg);
     fill: black;
+}
+.animazione{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.fragola-animazione{
+    width: 60px;
+    height: 60px;
+    
+    offset-path: path("M42 59C240.4 154.2 136 123.333 59 96C230.2 184 169 225 219 238C269 251 347 174 347 174C347 174 521.4 25.2 515 106C507 207 601 216 612 156C623 96 670 29 675 96C680 163 652 215 632 232C616 245.6 491 238 536 251");
+    animation: move 6000ms infinite alternate ease-in-out;
+}
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:1rem 2rem;
+    padding-right: 15rem;
+    padding-top: 5rem;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+}
+.card h2{
+    padding-top: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: #A4193D;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #A4193D;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.works {
+    display: flex;
+    align-items: center;
+    padding-left: 15rem; 
+    padding-top: 20rem; 
+    position: fixed;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #72112a;
+}
+
+h2 a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #520c1e
 }
 
